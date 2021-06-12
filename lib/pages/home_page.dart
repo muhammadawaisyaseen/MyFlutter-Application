@@ -7,6 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //backgroundColor: Color.fromARGB(78, 93, 43, 12),
       appBar: AppBar(
         title: Text("Flutter Catalog"),
       ),
