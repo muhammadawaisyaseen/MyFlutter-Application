@@ -11,7 +11,7 @@ class _LoginPageState extends State<LoginPage> {
 
   final _formKey = GlobalKey<FormState>();
 
-  moveToHome(BuildContext) {
+  moveToHome(BuildContext context) {
     if (_formKey.currentState!.validate()) {
       Navigator.pushNamed(context, MyRoutes.homeroute);
     }
@@ -79,12 +79,6 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     ElevatedButton(
                         style: TextButton.styleFrom(minimumSize: Size(90, 40)),
-                        // style: ButtonStyle(
-                        //     shape:
-                        //         MaterialStateProperty.all<RoundedRectangleBorder>(
-                        //             RoundedRectangleBorder(
-                        //   borderRadius: BorderRadius.circular(20.0),
-                        // ))),
                         onPressed: () => moveToHome(context),
                         child: Text("Login")),
                   ],

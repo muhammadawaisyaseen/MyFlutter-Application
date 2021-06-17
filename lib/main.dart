@@ -17,18 +17,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: ThemeData(
         primarySwatch: Colors.pink,
         fontFamily: GoogleFonts.padauk().fontFamily,
+        appBarTheme: AppBarTheme(
+            color: Colors.white, iconTheme: IconThemeData(color: Colors.black)),
+        textTheme: Theme.of(context).textTheme,
       ),
       darkTheme: ThemeData(primarySwatch: Colors.brown),
-      initialRoute: "/",
+      initialRoute: MyRoutes.homeroute,
       routes: {
         '/': (context) => LoginPage(),
         MyRoutes.homeroute: (context) => HomePage(),
-        //MyRoutes.loginroute: (context) => LoginPage(),
+        MyRoutes.loginroute: (context) => LoginPage(),
       },
     );
   }
