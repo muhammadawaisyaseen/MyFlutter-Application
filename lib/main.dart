@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: ThemeData(
-        primarySwatch: Colors.pink,
+        //primarySwatch: Colors.pink,
         fontFamily: GoogleFonts.padauk().fontFamily,
         appBarTheme: AppBarTheme(
             color: Colors.white, iconTheme: IconThemeData(color: Colors.black)),
