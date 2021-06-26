@@ -12,16 +12,25 @@ class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
 
   moveToHome(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) => CircularProgressIndicator(),
+    );
     if (_formKey.currentState!.validate()) {
+      //
+      //
+
+      //
+      Navigator.pop(context);
       Navigator.pushNamed(context, MyRoutes.homeroute);
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: Colors.white,
-      child: SingleChildScrollView(
+    return Scaffold(
+      // color: Colors.white,
+      body: SingleChildScrollView(
         child: Column(
           children: [
             Image.asset(

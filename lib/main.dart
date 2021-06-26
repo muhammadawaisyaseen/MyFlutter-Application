@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_catalog/classes/routes.dart';
 import 'package:flutter_catalog/login_page.dart';
 import 'package:flutter_catalog/pages/home_page.dart';
+import 'package:flutter_catalog/pages/myproduct_details.dart';
 import 'pages/home_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -28,10 +29,12 @@ class MyApp extends StatelessWidget {
       ),
       darkTheme: ThemeData(primarySwatch: Colors.brown),
       initialRoute: MyRoutes.homeroute,
+      
       routes: {
-        '/': (context) => LoginPage(),
+        '/': (context) => HomePage(),
         MyRoutes.homeroute: (context) => HomePage(),
         MyRoutes.loginroute: (context) => LoginPage(),
+        // MyRoutes.detailsroute: (context) => MyProductDetails()
       },
     );
   }

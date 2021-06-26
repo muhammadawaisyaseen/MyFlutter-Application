@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+//import 'package:flutter/material.dart';
+// import 'dart:ffi';
 
 class MyItems {
   final int id;
@@ -8,5 +9,13 @@ class MyItems {
   final String color;
   final String image;
 
-  MyItems({required this.id, required this.name, required this.disc, required this.price, required this.color, required this.image});
+  MyItems(
+      {required this.id,
+      required this.name,
+      required this.disc,
+      required this.price,
+      required this.color,
+      required this.image});
 }
+
+
